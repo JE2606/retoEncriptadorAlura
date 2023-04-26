@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK DEL CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <!-- TEXT TAREA PARA INGRESAR EL TEXTO A ENCRIPTAR -->
+    <div class="contenedor">
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto para Encriptar"></textarea>
+        </div>
+        <!-- LOS TERMINOS NECESARIOS PARA ENCRIPTAR UN TEXTO -->
+        <div class="terminos">
+            <p>Por favor, solo ingrese texto en minúsculas y sin acentos.</p>
+        </div>
+        <!-- BOTONES DE ENCRIPTADO Y DESENCRIPTADO -->
+        <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+        </div>
+        <!-- ESPACIO DE ENCRIPTAR -->
+        <div class="encriptado">
+            <!-- IMAGEN PARA SECCION DE ENCRIPTAR -->
+            <img src="img/encriptar.png" alt="Imagen del encriptado" id="imgEncriptar">
+            <div class="mensajeEncriptado" id="mensajeEncriptado">
+                <!-- COMUNICACION AL USUARIO DE QUE NO SE HA COLOCADO NINGUN TEXTO A ENCRIPTAR -->
+                <h2 id="tituloMensaje">Ningún mensaje ha sido encriptado</h2>
+                <!-- PEDIDA DE TEXTO -->
+                <p id="parrafo">Ingrese el texto que desea encriptar o desencriptar</p>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
