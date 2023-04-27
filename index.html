@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONO -->
+    <link rel="shortcut icon" href="img/icono2.png">
     <!-- LINK DEL CSS -->
     <link rel="stylesheet" href="styles.css">
     <title>Encriptador de Texto</title>
 </head>
 <body>
-    <!-- TEXT TAREA PARA INGRESAR EL TEXTO A ENCRIPTAR -->
+    <!-- TEXTAREA PARA INGRESAR EL TEXTO A ENCRIPTAR -->
     <div class="contenedor">
         <div class="encriptar">
             <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto para Encriptar"></textarea>
@@ -26,13 +28,13 @@
         <!-- ESPACIO DE ENCRIPTAR -->
         <div class="encriptado">
             <!-- IMAGEN PARA SECCION DE ENCRIPTAR -->
-            <img src="img/encriptar.png" alt="Imagen del encriptado" id="imgEncriptar">
+            <img src="img/principal.png" alt="Imagen del encriptado" id="imgPrincipal">
             <div class="mensajeEncriptado" id="mensajeEncriptado">
                 <!-- COMUNICACION AL USUARIO DE QUE NO SE HA COLOCADO NINGUN TEXTO A ENCRIPTAR -->
-                <h2 id="tituloMensaje">Ningún mensaje ha sido encriptado</h2>
+                <h2 id="tituloMensaje">No se ha ingresado texto para encriptar</h2>
                 <!-- PEDIDA DE TEXTO -->
                 <p id="parrafo">Ingrese el texto que desea encriptar o desencriptar</p>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+                <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
             </div>
         </div>
     </div>
