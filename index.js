@@ -17,14 +17,21 @@ function encriptar(){
     // CONDICIONALES POR SI EL USUARIO INGRESO TEXTO O NO
     if(texto.length !=0 ){
         document.getElementById("texto").value = textoCifrado;
-        tituloMensaje.textContent = "Texto encriptado con éxito";
+        tituloMensaje.textContent = "¡Texto encriptado exitosamente!";
         parrafo.textContent = "";
         imagenPrincipal.src ="./img/encriptado.png";
     }else{
         imagenPrincipal.src = "./img/principal.png";
         tituloMensaje.textContent = "No se ha ingresado texto para encriptar";
         parrafo.textContent = "Ingrese el texto que desea encriptar o desencriptar";
-        alert("Por favor ingresa algún texto para encriptar");
+        Swal.fire({
+            title: "Error",
+            text: "Ingrese algún texto para poder encriptar o desencriptar.",
+            icon: "error",
+            backdrop: true,
+            timer: 5000,
+            timerProgressBar: true,
+        });
     }
 }
 
@@ -44,13 +51,21 @@ function desencriptar(){
 
     if(texto.length != 0){
         document.getElementById("texto").value = textoCifrado;
-        tituloMensaje.textContent = "Texto desencriptado exitosamente";
+        tituloMensaje.textContent = "¡Texto desencriptado exitosamente!";
         parrafo.textContent = "";
         imagenPrincipal.src = "./img/desencriptado.png";
     } else{
         imagenPrincipal.src = "./img/principal.png";
         tituloMensaje.textContent = "No se ha ingresado texto para encriptar";
         parrafo.textContent = "Ingrese el texto que desea encriptar o desencriptar";
-        alert("Por favor ingresa algún texto para encriptar");
-    }
+        Swal.fire({
+            title: "Error",
+            text: "Ingrese algún texto para poder encriptar o desencriptar.",
+            icon: "error",
+            backdrop: true,
+            timer: 5000,
+            timerProgressBar: true,
+        });
+          }
+    
 }
